@@ -4,10 +4,10 @@
   "version": "1.0",
   "manifest_version": 3,
   "background": {
-    "service_worker": "/script/background.js"
+    "service_worker": "script/background.js"
   },
   "action": {
-    "default_popup": "/popup/popup.html",
+    "default_popup": "popup/popup.html",
     "default_icon": "images/icons/icon16.png"
   },
   "icons": {
