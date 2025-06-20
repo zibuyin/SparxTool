@@ -3,22 +3,16 @@
   "description": "A browser extension that adds a whiteboard into sparx!",
   "version": "1.0",
   "manifest_version": 3,
-
-
-
   "background": {
     "service_worker": "/script/background.js"
   },
   "action": {
     "default_popup": "/popup/popup.html",
-    "default_icon": "/images/icon.png"
-
+    "default_icon": "/images/favicon.ico"
   },
   "icons": {
     "16": "images/favicon.ico",
     "48": "images/favicon.ico",
     "128": "images/favicon.ico"
-
-
   }
 }
