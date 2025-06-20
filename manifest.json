@@ -8,11 +8,11 @@
   },
   "action": {
     "default_popup": "/popup/popup.html",
-    "default_icon": "/images/favicon.ico"
+    "default_icon": "images/icons/icon16.png"
   },
   "icons": {
-    "16": "images/favicon.ico",
-    "48": "images/favicon.ico",
-    "128": "images/favicon.ico"
+    "16": "images/icons/icon16.png",
+    "48": "images/icons/icon48.png",
+    "128": "images/icons/icon128.png"
   }
 }
