@@ -1,1 +1,1 @@
-alert("debug")
+console.log("debug")
