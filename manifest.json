@@ -10,8 +10,15 @@
     "service_worker": "/script/background.js"
   },
   "action": {
-//    "default_popup": "/popup/popup.html",
+    "default_popup": "/popup/popup.html",
     "default_icon": "/images/icon.png"
+
+  },
+  "icons": {
+    "16": "images/favicon.ico",
+    "48": "images/favicon.ico",
+    "128": "images/favicon.ico"
+
 
   }
 }
