@@ -6,9 +6,6 @@ chrome.tabs.onUpdated.addListener(async function (tabId, changeInfo, tab) {
     console.log(tabId, changeInfo, tab);
 });
 
-// chrome.action.onClicked.addListener((tab) => {
-//     chrome.scripting.executeScript({
-//         target: { tabId: tab.id },
-//         files: ['content.js']
-//     });
-// });
+chrome.webNavigation.onCompleted.addListener(function () {
+    alert("This is my favorite website!");
+}, { url: [{ urlMatches: 'https://www.google.com/' }] });
