@@ -1,0 +1,17 @@
+{
+  "name": "Sparx Tool",
+  "description": "A browser extension that adds a whiteboard into sparx!",
+  "version": "1.0",
+  "manifest_version": 3,
+
+
+
+  "background": {
+    "service_worker": "/script/background.js"
+  },
+  "action": {
+//    "default_popup": "/popup/popup.html",
+    "default_icon": "/images/icon.png"
+
+  }
+}
