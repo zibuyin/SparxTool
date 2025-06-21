@@ -5,11 +5,14 @@ async function wait(ms) {
 let header = document.getElementsByClassName("_BannerSpacing_u9l2x_29")
 
 async function independent() {
-    await wait(1000)
-    // if (header) {
-        console.log("hi")
-        header[0].innerHTML = "hi"
-    // }
+    while (true) {
+        await wait(30)
+        if (header.length > 0) {
+            console.log("hi")
+            header[0].innerHTML = "<span> &nbsp; Independent Learning</span>"
+            return(0)
+        }
+    }
 }
 
 independent()
