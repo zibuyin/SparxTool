@@ -1,3 +1,5 @@
-chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-    console.log(tabs[0].id)
-});
+// chrome.tabs.query({url:"*sparx*"},tabs=>{
+//     tabs.forEach(tab=>{
+//         chrome.tabs.executeScript(tab.id,{file:"content.js"});
+//     });
+// });
