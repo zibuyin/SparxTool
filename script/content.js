@@ -1,6 +1,6 @@
 let header = document.getElementsByClassName("_BannerSpacing_u9l2x_29");
 let calculatorIcon = document.getElementsByClassName("_CalculatorInfoContainer_5oh8x_10");
-let whiteboardElement = document.getElementsByClassName("whiteboard")
+let whiteboardElement = document.getElementsByTagName("div")
 
 let whiteboardOpen = false;
 
@@ -32,26 +32,28 @@ function openWhiteboard() {
 
 async function whiteboard() {
     while (true) {
-        console.log("whiteboard")
         if (calculatorIcon.length > 0 && calculatorIcon[0].getElementsByTagName("button").length == 0) {
-            calculatorIcon[0].innerHTML += `<button> &nbsp; &nbsp; <button class="_Chip_bu06u_1 _Selected_bu06u_13 _Boxy_bu06u_75 _Filled_bu06u_8 _md_bu06u_84">
+            calculatorIcon[0].innerHTML += `&nbsp; &nbsp; <button class="_Chip_bu06u_1 _Selected_bu06u_13 _Boxy_bu06u_75 _Filled_bu06u_8 _md_bu06u_84">
             whiteboard
             </button>`
-            calculatorIcon[0].addEventListener("click", function() {
-                if (whiteboardOpen) {
-
+            calculatorIcon[0].getElementsByTagName("button")[0].addEventListener("click", function() {
+                if (!whiteboardOpen) {
+                    // document.body.innerHTML += '<div class="whiteboard"></div>'
+                    whiteboardElement[whiteboardElement.length - 1].style.backgroundColor = "#ccc5"
+                    whiteboardElement[whiteboardElement.length - 1].style.width = "100vw"
+                    whiteboardElement[whiteboardElement.length - 1].style.height = "100vh"
+                    whiteboardElement[whiteboardElement.length - 1].style.position = "fixed"
+                    whiteboardElement[whiteboardElement.length - 1].style.top = 0
+                    whiteboardElement[whiteboardElement.length - 1].style.left = 0
+                    whiteboardElement[whiteboardElement.length - 1].style.backdropFilter = "blur(6px)"
+                    whiteboardElement[whiteboardElement.length - 1].style.display = "inherit"
+                    whiteboardOpen = true;
+                    whiteboardElement[whiteboardElement.length - 1].addEventListener("click", function() {
+                        whiteboardElement[whiteboardElement.length - 1].style.display = "none";
+                        whiteboardOpen = false;
+                        whiteboardElement[whiteboardElement.length - 1].removeEventListener("click", null);
+                    });
                 }
-                else {
-                    document.body.innerHTML += '<div class="whiteboard"></div>'
-                    whiteboardElement[0].style.backgroundColor = "#ccc5"
-                    whiteboardElement[0].style.width = "100vw"
-                    whiteboardElement[0].style.height = "100vh"
-                    whiteboardElement[0].style.position = "fixed"
-                    whiteboardElement[0].style.top = 0
-                    whiteboardElement[0].style.left = 0
-                    whiteboardElement[0].style.backdropFilter = "blur(6px)"
-                }
-                whiteboardOpen = !whiteboardOpen;
             });
             return(0)
         }
@@ -64,7 +66,13 @@ independent();
 whiteboard();
 
 window.navigation.addEventListener("navigate", (event) => {
+    console.log('change')
     independent();
-    whiteboard(whiteboardOpen = false);
+    whiteboard();
 })
 
+document.getElementsByTagName("div").array.forEach(element => {
+    element.addEventListener("clicked", function() {
+        console.log("clicked")
+    })
+});
