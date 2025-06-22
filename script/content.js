@@ -1,6 +1,8 @@
 let header = document.getElementsByClassName("_BannerSpacing_u9l2x_29");
 let calculatorIcon = document.getElementsByClassName("_CalculatorInfoContainer_5oh8x_10");
 
+let whiteboardOpen = false;
+
 async function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -23,13 +25,25 @@ async function independent() {
     }
 }
 
+function openWhiteboard() {
+    console.log('working')
+}
+
 async function whiteboard() {
     while (true) {
         console.log("whiteboard")
         if (calculatorIcon.length > 0 && calculatorIcon[0].getElementsByTagName("button").length == 0) {
-            calculatorIcon[0].innerHTML += ` &nbsp; &nbsp; <button class="_Chip_bu06u_1 _Selected_bu06u_13 _Boxy_bu06u_75 _Filled_bu06u_8 _md_bu06u_84" onclick="console.log('lilBro')">
-            whiteBoard
+            calculatorIcon[0].innerHTML += `<button> &nbsp; &nbsp; <button class="_Chip_bu06u_1 _Selected_bu06u_13 _Boxy_bu06u_75 _Filled_bu06u_8 _md_bu06u_84">
+            whiteboard
             </button>`
+            calculatorIcon[0].addEventListener("click", function() {
+                if (whiteboardOpen) {
+
+                }
+                else {
+
+                }
+            });
             return(0)
         }
         await wait(5)
@@ -41,6 +55,6 @@ whiteboard();
 
 window.navigation.addEventListener("navigate", (event) => {
     independent();
-    whiteboard();
+    whiteboard(whiteboardOpen = false);
 })
 
