@@ -1,5 +1,6 @@
 let header = document.getElementsByClassName("_BannerSpacing_u9l2x_29");
 let calculatorIcon = document.getElementsByClassName("_CalculatorInfoContainer_5oh8x_10");
+let whiteboardElement = document.getElementsByClassName("whiteboard")
 
 let whiteboardOpen = false;
 
@@ -26,7 +27,7 @@ async function independent() {
 }
 
 function openWhiteboard() {
-    console.log('working')
+    // console.log('working')
 }
 
 async function whiteboard() {
@@ -41,12 +42,21 @@ async function whiteboard() {
 
                 }
                 else {
-
+                    document.body.innerHTML += '<div class="whiteboard"></div>'
+                    whiteboardElement[0].style.backgroundColor = "#ccc5"
+                    whiteboardElement[0].style.width = "100vw"
+                    whiteboardElement[0].style.height = "100vh"
+                    whiteboardElement[0].style.position = "fixed"
+                    whiteboardElement[0].style.top = 0
+                    whiteboardElement[0].style.left = 0
+                    whiteboardElement[0].style.backdropFilter = "blur(6px)"
                 }
+                whiteboardOpen = !whiteboardOpen;
             });
             return(0)
         }
         await wait(5)
+        // console.log("waiting")
     }
 }
 
