@@ -5,14 +5,24 @@ async function wait(ms) {
 let header = document.getElementsByClassName("_BannerSpacing_u9l2x_29")
 
 async function independent() {
+    // header[0].innerHTML = '<span></span>'
     while (true) {
-        await wait(30)
-        if (header.length > 0) {
-            console.log("hi")
-            header[0].innerHTML = "<span> &nbsp; Independent Learning</span>"
+        if (document.getElementsByClassName("_ILBanner_u9l2x_53").length == 0 && header.length > 0) {
+            header[0].innerHTML = '<span class="_ILBanner_u9l2x_53">Independent Learning</span>'
+            header[0].style.justifyContent = "start"
             return(0)
         }
+        else if (document.getElementsByClassName("_ILBanner_u9l2x_53").length == 2) {
+            header[0].innerHTML = '<span></span>'
+            return(0)
+        }
+        await wait(5)
     }
 }
 
 independent()
+
+window.navigation.addEventListener("navigate", (event) => {
+    independent()
+    console.log("change")
+})
