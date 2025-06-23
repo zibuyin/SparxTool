@@ -8,13 +8,19 @@
     "scripting",
     "tabs"
   ],
-  "background": {
-    "service_worker": "script/background.js"
-  },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["script/content.js"]
+      "matches": ["https://maths.sparx-learning.com/*"],
+      "js": ["script/independentL.js"],
+      "css": ["css/sparxMath.css"]
+    }, 
+    {
+      "matches": ["https://maths.sparx-learning.com/student/settings"],
+      "js": ["script/settings.js"]
+    },
+    {
+      "matches": ["https://maths.sparx-learning.com/student/package/*"],
+      "js": ["script/whiteboard.js"]
     }
   ],
   "action": {
