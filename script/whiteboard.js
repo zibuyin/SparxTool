@@ -51,6 +51,5 @@ async function whiteboard() {
 whiteboard();
 
 window.navigation.addEventListener("navigate", (event) => {
-    console.log('change')
     whiteboard();
 })

@@ -25,6 +25,5 @@ async function independent() {
 independent();
 
 window.navigation.addEventListener("navigate", (event) => {
-    console.log('change')
     independent();
 })

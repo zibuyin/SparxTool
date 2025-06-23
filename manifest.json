@@ -11,16 +11,8 @@
   "content_scripts": [
     {
       "matches": ["https://maths.sparx-learning.com/*"],
-      "js": ["script/independentL.js"],
+      "js": ["script/independentL.js", "script/whiteboard.js", "script/settings.js"],
       "css": ["css/sparxMath.css"]
-    }, 
-    {
-      "matches": ["https://maths.sparx-learning.com/student/settings"],
-      "js": ["script/settings.js"]
-    },
-    {
-      "matches": ["https://maths.sparx-learning.com/student/package/*"],
-      "js": ["script/whiteboard.js"]
     }
   ],
   "action": {
