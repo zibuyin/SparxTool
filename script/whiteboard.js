@@ -1,16 +1,14 @@
 let calculatorIcon = document.getElementsByClassName("_CalculatorInfoContainer_5oh8x_10");
-let whiteboardElement = document.getElementsByTagName("div");
+let whiteboardElement = document.getElementsByClassName("spx-status-embed");
 
-let whiteboardElementBlur = whiteboardElement[whiteboardElement.length - 1]
+let whiteboardElementBlur = whiteboardElement[0]
 
 function openWhiteboard() {
-    whiteboardElementBlur.style.backgroundColor = "#fff9";
     whiteboardElementBlur.style.width = "100vw";
     whiteboardElementBlur.style.height = "100vh";
     whiteboardElementBlur.style.position = "fixed";
     whiteboardElementBlur.style.top = 0;
     whiteboardElementBlur.style.left = 0;
-    whiteboardElementBlur.style.backdropFilter = "blur(5px)";
     whiteboardElementBlur.style.display = "block";
     whiteboardElementBlur.innerHTML += '<div id="whiteboard"></div>'
     document.getElementById("whiteboard").style.width = "80vw";
@@ -33,7 +31,7 @@ async function whiteboard() {
             </button>`;
             calculatorIcon[0].getElementsByTagName("button")[0].addEventListener("click", function() {
                 if (whiteboardElementBlur) {
-                    if (!(whiteboardElementBlur.style.display == "block")) {
+                    if (whiteboardElement.length > 0) {
                         openWhiteboard();
                         whiteboardElementBlur.addEventListener("click", function() {
                             closeWhiteboard();
@@ -41,15 +39,9 @@ async function whiteboard() {
                     }
                 }
             });
-            return(0)
         }
-        await wait(5)
-        // console.log("waiting")
+        await wait(5);
     }
 }
 
 whiteboard();
-
-window.navigation.addEventListener("navigate", (event) => {
-    whiteboard();
-})

@@ -11,7 +11,8 @@
   "content_scripts": [
     {
       "matches": ["https://maths.sparx-learning.com/*"],
-      "js": ["script/independentL.js", "script/whiteboard.js", "script/settings.js"]
+      "js": ["script/independentL.js", "script/whiteboard.js", "script/settings.js"],
+      "css": ["css/sparxMath.css"]
     }
   ],
   "action": {
