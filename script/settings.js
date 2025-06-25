@@ -1,4 +1,5 @@
-document.getElementsByTagName("head")[0] += `<style>${document.getElementById('css')}</style>`
+let sliderContainer;
+let slider;
 
 async function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -10,20 +11,28 @@ async function settings() {
             if (document.getElementsByClassName("_Container_hgytc_1")[0].getElementsByTagName("section").length > 0 & 
             document.getElementsByClassName("_Container_hgytc_1")[0].getElementsByTagName("section")[0].getElementsByClassName("themeSpace").length == 0) {
                 document.getElementsByClassName("_Container_hgytc_1")[0].getElementsByTagName("section")[0].innerHTML += `
-                <h2>Theme</h2>
-                <button id="sliderContainer" class="themeSpace"><div></div></button>
-                <h2>Fake Independent Learning</h2>`
+                <h2>Dark Mode</h2>
+                <button class="sliderContainer themeSpace"><div></div></button>
+                <h2>Fake Independent Learning</h2>
+                <button class="sliderContainer themeSpace"><div></div></button>`
 
-                document.getElementById("sliderContainer").addEventListener("click", (event) => {
-                    if (document.getElementById("sliderContainer").getElementsByTagName("div")[0].style.marginLeft == 0) {
-                        document.getElementById("sliderContainer").getElementsByTagName("div")[0].style.marginLeft = "18px";
-                        document.getElementById("sliderContainer").getElementsByTagName("div")[0].style.backgroundColor = "#222";
-                    }
-                    else {
-                        document.getElementById("sliderContainer").getElementsByTagName("div")[0].style.marginLeft = 0;
-                        document.getElementById("sliderContainer").getElementsByTagName("div")[0].style.backgroundColor = "#fff";
-                    }
-                });
+                for (var i = 0; i < document.getElementsByClassName("sliderContainer").length; ++i) {
+
+                    sliderContainer = document.getElementsByClassName("sliderContainer")[i];
+                    
+                    sliderContainer.id = `${i}`
+                    sliderContainer.getElementsByTagName("div")[0].style.marginLeft = "2px";
+
+                    sliderContainer.addEventListener("click", (event) => {
+                        slider = document.getElementById(event.target.id).getElementsByTagName("div")[0];
+                        if (slider.style.marginLeft == "2px") {
+                            slider.style.marginLeft = "16px";
+                        }
+                        else {
+                            slider.style.marginLeft = "2px";
+                        }
+                    });
+                }
                 return(0);
             }
         }
