@@ -11,14 +11,18 @@ async function settings() {
             document.getElementsByClassName("_Container_hgytc_1")[0].getElementsByTagName("section")[0].getElementsByClassName("themeSpace").length == 0) {
                 document.getElementsByClassName("_Container_hgytc_1")[0].getElementsByTagName("section")[0].innerHTML += `
                 <h2>Theme</h2>
-                <div id="sliderContainer" class="themeSpace">hi</div>
+                <button id="sliderContainer" class="themeSpace"><div></div></button>
                 <h2>Fake Independent Learning</h2>`
-            
-                document.getElementById("sliderContainer").style.width = "100px";
-                document.getElementById("sliderContainer").style.height = "100px";
-                document.getElementById("sliderContainer").style.backgroundColor = "#f00";
-                document.getElementById("sliderContainer").addEventListener("click", (event) => {
 
+                document.getElementById("sliderContainer").addEventListener("click", (event) => {
+                    if (document.getElementById("sliderContainer").getElementsByTagName("div")[0].style.marginLeft == 0) {
+                        document.getElementById("sliderContainer").getElementsByTagName("div")[0].style.marginLeft = "18px";
+                        document.getElementById("sliderContainer").getElementsByTagName("div")[0].style.backgroundColor = "#222";
+                    }
+                    else {
+                        document.getElementById("sliderContainer").getElementsByTagName("div")[0].style.marginLeft = 0;
+                        document.getElementById("sliderContainer").getElementsByTagName("div")[0].style.backgroundColor = "#fff";
+                    }
                 });
                 return(0);
             }

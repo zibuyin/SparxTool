@@ -4,23 +4,26 @@ let whiteboardElement = document.getElementsByClassName("spx-status-embed");
 let whiteboardElementBlur = whiteboardElement[0]
 
 function openWhiteboard() {
-    whiteboardElementBlur.style.width = "100vw";
+    whiteboardElementBlur.id = "open";
     whiteboardElementBlur.style.height = "100vh";
     whiteboardElementBlur.style.position = "fixed";
     whiteboardElementBlur.style.top = 0;
     whiteboardElementBlur.style.left = 0;
-    whiteboardElementBlur.style.display = "block";
-    whiteboardElementBlur.innerHTML += '<div id="whiteboard"></div>'
-    document.getElementById("whiteboard").style.width = "80vw";
-    document.getElementById("whiteboard").style.height = "70vh";
-    document.getElementById("whiteboard").style.backgroundColor = "#f00";
-    whiteboardOpen = true;
+    whiteboardElementBlur.style.display = "flex";
+    if (whiteboardElementBlur.getElementsByClassName("whiteboard").length == 0) {
+        whiteboardElementBlur.innerHTML += `
+        <div class="whiteboard">hello</div>`;
+    }
+    whiteboardElementBlur.getElementsByClassName("whiteboard")[0].style.width = "80vw";
+    whiteboardElementBlur.getElementsByClassName("whiteboard")[0].style.height = "70vh";
+    whiteboardElementBlur.getElementsByClassName("whiteboard")[0].style.backgroundColor = "#f00";
 }
 
-function closeWhiteboard() {
-    whiteboardElementBlur.style.display = "none";
-    whiteboardOpen = false;
+async function closeWhiteboard() {
+    whiteboardElementBlur.id = "closed";
     whiteboardElementBlur.removeEventListener("click", null);
+    await wait(200);
+    whiteboardElementBlur.style.display = "none";
 }
 
 async function whiteboard() {
@@ -39,6 +42,10 @@ async function whiteboard() {
                     }
                 }
             });
+            while (whiteboardElement.length == 0) {
+                await wait(3);
+            }
+            closeWhiteboard();
         }
         await wait(5);
     }
