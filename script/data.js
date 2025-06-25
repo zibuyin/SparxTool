@@ -1,4 +1,8 @@
-function storeLargeNumber(key: string, value: string): void {
+async function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function storeLargeNumber(key, value){
     if (typeof key !== 'string') {
         throw new Error("Key must be a string");
     }
@@ -14,7 +18,7 @@ function storeLargeNumber(key: string, value: string): void {
     }
 }
 
-function readLargeNumber(key: string): number | null {
+function readLargeNumber(key) {
     if (typeof key !== 'string') {
         throw new Error("Key must be a string");
     }

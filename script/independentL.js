@@ -1,9 +1,5 @@
 let header = document.getElementsByClassName("_BannerSpacing_u9l2x_29");
 
-async function wait(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
 async function independent() {
     while (true) {
         if (document.getElementsByClassName("_ILBanner_u9l2x_53").length == 0 && header.length > 0) {
