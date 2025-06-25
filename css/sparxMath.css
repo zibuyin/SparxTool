@@ -50,3 +50,35 @@ button.sliderContainer > div {
     background-color: #2179de;
     transition: 0.15s ease-out;
 }
+
+div#theme {
+    display: flex;
+}
+
+div#theme > span {
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+}
+
+input.radio {
+    background-color: #fff;
+    height: 16px;
+    width: 16px;
+}
+
+input.radio::before {
+    content: '';
+    display: block;
+    position: inherit;
+    height: inherit;
+    width: inherit;
+    border-radius: 100px;
+    position: relative;
+    border: 2px #2179de solid;
+}
+
+div > label {
+    font-size: 1.15em;
+    font-weight: bold;
+}
