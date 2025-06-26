@@ -1,0 +1,28 @@
+:root {
+    --sparx: #3467f9;
+}
+
+div._Content_1hczm_7, ._Activity_67a0v_1 {
+    background-color: #222;
+}
+
+div._Sidebar_1hczm_142, ._AccordionHeader_9fvag_77, ._QuestionContainer_ypayp_1, ._AccordionItem_9fvag_7, 
+._WithStatus_9fvag_42, ._InProgress_9fvag_54, ._AccordionTrigger_9fvag_24, ._PackageAccordionTrigger_s1p {
+    background-color: #333;
+}
+
+._NavButton_1hczm_13:hover {
+    background-color: #ff0;
+}
+
+._Sidebar_1hczm_142, ._NavButtonLabel_1hczm_81 {
+    color: #fff;
+}
+
+._Selected_1hczm_180 > ._NavButtonLabel_1hczm_81 {
+    color: #000;
+}
+
+._NavButton_1hczm_13:hover > ._NavButtonLabel_1hczm_81 {
+    color: #444;
+}
