@@ -4,4 +4,4 @@
 - dark mode css 
 - themes 
 - bookwork logger
-- remove independent learning if slider
+- remove independent learning if slider [x]

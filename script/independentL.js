@@ -2,7 +2,7 @@ let header = document.getElementsByClassName("_BannerSpacing_u9l2x_29");
 let number = false;
 
 async function independent() {
-    number = (readLargeNumber("h7i") % 4) > 1;
+    number = (readLargeNumber(key) % 4) > 1;
     console.log(number)
     while (true) {
         if ((number && document.getElementsByClassName("_ILBanner_u9l2x_53").length == 0) && header.length > 0) {
@@ -10,7 +10,7 @@ async function independent() {
             header[0].style.justifyContent = "start";
             return(0);
         }
-        else if ((!number) || document.getElementsByClassName("_ILBanner_u9l2x_53").length > 1) {
+        else if ((!number) || document.getElementsByClassName("_ILBanner_u9l2x_53").length > 1 && header.length > 0) {
             header[0].innerHTML = '<span></span>';
             return(0);
         }
@@ -23,6 +23,6 @@ async function independent() {
 
 independent();
 
-window.navigation.addEventListener("navigate", (event) => {
+window.navigation.addEventListener("navigate", function() {
     independent();
 })
