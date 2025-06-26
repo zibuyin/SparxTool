@@ -1,6 +1,11 @@
 let sliderContainer;
 let slider;
 
+let darkMode = (readLargeNumber("h7i") % 2) > 0;
+let fakeIndependentLearning = (readLargeNumber("h7i") % 4) > 1;
+let theme = (readLargeNumber("h7i") - readLargeNumber("h7i") % 4) / 4
+
+console.log(theme)
 
 async function settings() {
     while (document.getElementsByClassName("_SectionContainer_hgytc_20").length == 0) {
@@ -15,7 +20,7 @@ async function settings() {
             document.getElementsByClassName("_Container_hgytc_1")[0].getElementsByTagName("section")[0].getElementsByClassName("themeSpace").length == 0) {
                 document.getElementsByClassName("_Container_hgytc_1")[0].getElementsByTagName("section")[0].innerHTML += `<br>
                     <h2>Dark Mode</h2>
-                    <button class="sliderContainer themeSpace"><div id="slider"></div></button>
+                    <button class="sliderContainer themeSpace" id="darkMode"><div id="slider"></div></button>
                     <br><br>
                                     
                     <h2>Theme</h2>
@@ -36,15 +41,24 @@ async function settings() {
                     <br>
 
                     <h2>Fake Independent Learning</h2>
-                    <button class="sliderContainer themeSpace"><div id="slider"></div></button>`
+                    <button class="sliderContainer themeSpace" id="IndependentLearning"><div id="slider"></div></button>`
 
                 for (var i = 0; i < document.getElementsByClassName("sliderContainer").length; ++i) {
 
                     sliderContainer = document.getElementsByClassName("sliderContainer")[i];
 
-                    sliderContainer.id = `${i}`
-                    sliderContainer.getElementsByTagName("div")[0].style.marginLeft = "2px";
+                    if (sliderContainer.id == "darkMode") {
+                        sliderContainer.getElementsByTagName("div")[0].style.marginLeft = darkMode ? "16px" : "2px";
+                    }
+                    else if (sliderContainer.id == "IndependentLearning") {
+                        sliderContainer.getElementsByTagName("div")[0].style.marginLeft = fakeIndependentLearning ? "16px" : "2px";
+                    }
+                    else {
+                        sliderContainer.getElementsByTagName("div")[0].style.marginLeft = "2px"
+                    }
 
+                    sliderContainer.id = `${i}`
+                    
                     sliderContainer.addEventListener("click", (event) => {
                         slider = event.target.getElementsByTagName("div")[0];
                         if (!slider) {
@@ -53,10 +67,13 @@ async function settings() {
 
                         if (slider.style.marginLeft == "2px") {
                             slider.style.marginLeft = "16px";
+                            storeLargeNumber("h7i", readLargeNumber("h7i") + 2);
                         }
                         else {
                             slider.style.marginLeft = "2px";
+                            storeLargeNumber("h7i", readLargeNumber("h7i") - 2);
                         }
+                        independent();
                     });
                 }
                 return(0);

@@ -7,9 +7,9 @@ function storeLargeNumber(key, value){
         throw new Error("Key must be a string");
     }
 
-    if (typeof value !== 'string') {
-        throw new Error("Value must be a string");
-    }
+    // if (typeof value !== 'string') {
+    //     throw new Error("Value must be a string");
+    // }
 
     try {
         localStorage.setItem(key, value);
@@ -17,6 +17,8 @@ function storeLargeNumber(key, value){
         console.error(`Error storing value: ${e}`);
     }
 }
+
+console.log()
 
 function readLargeNumber(key) {
     if (typeof key !== 'string') {

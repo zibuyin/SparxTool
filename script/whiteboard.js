@@ -32,6 +32,10 @@ async function whiteboard() {
             calculatorIcon[0].innerHTML += `&nbsp; &nbsp; <button class="_Chip_bu06u_1 _Selected_bu06u_13 _Boxy_bu06u_75 _Filled_bu06u_8 _md_bu06u_84">
             whiteboard
             </button>`;
+            while (!whiteboardElementBlur) {
+                await wait(5);
+            }
+            closeWhiteboard();
             calculatorIcon[0].getElementsByTagName("button")[0].addEventListener("click", function() {
                 if (whiteboardElementBlur) {
                     if (whiteboardElement.length > 0) {
