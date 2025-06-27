@@ -2,20 +2,38 @@
     --sparx: #3467f9;
 }
 
+* {
+    box-shadow: none;
+}
+
 div._Content_1hczm_7, ._Activity_67a0v_1 {
     background-color: #222;
 }
 
-div._Sidebar_1hczm_142, ._AccordionHeader_9fvag_77, ._QuestionContainer_ypayp_1, ._AccordionItem_9fvag_7, 
-._WithStatus_9fvag_42, ._InProgress_9fvag_54, ._AccordionTrigger_9fvag_24, ._PackageAccordionTrigger_s1p {
+div._Sidebar_1hczm_142, ._AccordionHeader_9fvag_77, div._QuestionContainer_ypayp_1 > div, div._AccordionItem_9fvag_7, 
+._WithStatus_9fvag_42, ._InProgress_9fvag_54, ._AccordionTrigger_9fvag_24, ._PackageAccordionTrigger_s1p,
+._TaskItemsContainer_jnrtf_1, ._LQDContainer_1v01e_1, div._QuestionContainer_ypayp_1, div._Sm_gk0gx_12 > p, 
+div._AccordionItem_9fvag_7 > *, div._AccordionItem_9fvag_7 > h3._AccordionHeader_9fvag_77 > button  {
     background-color: #333;
+    color: #eee;
+    box-shadow: none;
 }
 
-._NavButton_1hczm_13:hover {
+a._Task_1p2y5_1, button._NavButton_1hczm_13, ._Sidebar_1hczm_142 ._NavButton_1hczm_13._Selected_1hczm_180 {
+    background-color: #444;
+    color: #eee;
+}
+
+div._BottomBar_1wgpl_1 h3._AccordionHeader_9fvag_77:hover {
+    border-top: #555 1px solid;
+}
+
+._FocusTarget_1nxry_1 > button._NavButton_1hczm_13:hover, ._FocusTarget_1nxry_1 > button._FocusTarget_1nxry_1:hover {
     background-color: #ff0;
 }
 
-._Sidebar_1hczm_142, ._NavButtonLabel_1hczm_81 {
+._Sidebar_1hczm_142, ._NavButtonLabel_1hczm_81, ._TextElement_15tna_80, span._BookworkAccuracyText_1ug67_18,
+a._Task_1p2y5_1 > div > div > span {
     color: #fff;
 }
 
@@ -25,4 +43,12 @@ div._Sidebar_1hczm_142, ._AccordionHeader_9fvag_77, ._QuestionContainer_ypayp_1,
 
 ._NavButton_1hczm_13:hover > ._NavButtonLabel_1hczm_81 {
     color: #444;
+}
+
+._WelcomeBanner_1ehfm_13 > div > ._Hello_1ehfm_21 {
+    color: #ddd;
+}
+
+._WelcomeBanner_1ehfm_13 > div > ._PackageTypeDescription_1ehfm_32 {
+    color: #bbb;
 }
