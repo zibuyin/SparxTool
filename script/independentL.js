@@ -10,7 +10,7 @@ async function independent() {
             header[0].style.justifyContent = "start";
             return(0);
         }
-        else if ((!number) || document.getElementsByClassName("_ILBanner_u9l2x_53").length > 1 && header.length > 0) {
+        else if ((!number || document.getElementsByClassName("_ILBanner_u9l2x_53").length > 1) && header.length > 0) {
             header[0].innerHTML = '<span></span>';
             return(0);
         }

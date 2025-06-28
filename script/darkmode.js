@@ -1,13 +1,6 @@
 const link = document.createElement('link');
 link.rel = 'stylesheet';
-link.type = 'text/css'
-link.href = chrome.runtime.getURL('./script/sparxMathDark.css');
+link.type = 'text/css';
+link.href = 'https://raw.githubusercontent.com/zibuyin/SparxTool/refs/heads/main/css/sparxMathDark.css';
 
-async function darkModeF() {
-    document.getElementsByTagName("head")[0].appendChild(link)
-
-}
-
-darkModeF();
-
-window.navigation.addEventListener("navigate", darkmodeF());
+document.getElementsByTagName("head")[0].appendChild(link);

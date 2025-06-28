@@ -9,12 +9,6 @@
     "tabs",
     "storage"
   ],
-  "web_accessible_resources": [
-    {
-        "resources": [ "chrome-extension://flkpmaekegihajhekalhlfeoflhengcj/script/sparxMathDark.css"],
-        "matches": [ "<all_urls>" ]
-    }
-  ],
   "content_scripts": [
     {
       "matches": ["https://maths.sparx-learning.com/*"],
