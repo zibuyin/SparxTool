@@ -1,15 +1,13 @@
-async function deleteBanner() {
-    while (true)  {
-        if (document.getElementsByClassName("_WelcomeBanner_1ehfm_13").length > 0) {
-            document.getElementsByClassName("_WelcomeBanner_1ehfm_13")[0].remove();
-            return(0);
-        }
-        await wait(5);
-    }
+const link = document.createElement('link');
+link.rel = 'stylesheet';
+link.type = 'text/css'
+link.href = chrome.runtime.getURL('./script/sparxMathDark.css');
+
+async function darkModeF() {
+    document.getElementsByTagName("head")[0].appendChild(link)
+
 }
 
-deleteBanner();
+darkModeF();
 
-window.navigation.addEventListener("navigate", (event) => {
-    deleteBanner();
-});
+window.navigation.addEventListener("navigate", darkmodeF());

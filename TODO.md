@@ -7,3 +7,5 @@
 - saving theme options (4-bit binary (inside local storage))
 
 # Bugs
+
+- dark mode (buttons & (menus -- can't extract class))

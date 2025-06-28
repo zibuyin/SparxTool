@@ -51,7 +51,8 @@ div._DropdownMenuContent_1u1tt_41 > div > div._DropdownMenuItem_1u1tt_69, div > 
 div._DropdownMenuLabel_1u1tt_113, div._NotificationList_1p7b9_58, div._NameChooser_nm8mk_1, button._Trigger_iadio_216, 
 div._DialogContent_nm8mk_25, div._GameButtonGrid_58jvp_3, div._TablesHomeworkMainArea_bo64c_15, 
 div._TokenProgressBanner_jcw0e_1, button._SelectTrigger_11j1p_1, input._Search_bay8e_90, div._ActivityDay_1f6w3_10, 
-button._Tab_ppldj_11, div > div._IndependentLearningPackage_1slcq_68 {
+button._Tab_ppldj_11, div > div._IndependentLearningPackage_1slcq_68, div._TopicLinksSectionContainer_1slcq_115, 
+div._IndependentLearningProgressDialogContent_1slcq_58, div._IndependentLearningNoContentMessage_1slcq_84 {
     background-color: #333;
     color: #eee;
     box-shadow: none;
@@ -69,7 +70,7 @@ div._NameRandomiserBar_nm8mk_94, div._DialogButtonContainer_nm8mk_79 > button._B
 button._SelectTrigger_11j1p_1:hover, button._Tab_ppldj_11:hover[data-state="inactive"], a._Topic_1xxlk_59, 
 div._NameChooser_nm8mk_1 > button._ButtonBase_8cc92_1, div._ActivityDay_1f6w3_10 > div > a._Activity_1f6w3_1:hover, 
 div > span._Chip_1f6w3_81, span._CurriculumLevelChip_1f6w3_113, ol > li._IndependentLearningTaskItem_1slcq_237, 
-div._Pill_1slcq_283 {
+ol > li._IndependentLearningTaskItem_1slcq_237 > div._Pill_1slcq_283 {
     background-color: #444;
     color: #eee;
     box-shadow: none;
@@ -91,7 +92,8 @@ a._Task_1p2y5_1._TaskClickable_1p2y5_22:hover, ._Sidebar_1hczm_142 > button._Nav
 ._Sidebar_1hczm_142 > button._NavButton_1hczm_13._Selected_1hczm_180 > span._NavButtonLabel_1hczm_81, 
 div._AccordionItem_9fvag_7[data-orientation="vertical"] > h3._AccordionHeader_9fvag_77[data-orientation="vertical"]:hover, 
 a._ButtonMd_nt2r3_35._ButtonBlue_nt2r3_76:hover, div._DialogButtonContainer_nm8mk_79 > button._ButtonSmall_8cc92_40:first-child:hover,
-a._Topic_1xxlk_59:hover, div._NameChooser_nm8mk_1 > button._ButtonBase_8cc92_1:hover {
+a._Topic_1xxlk_59:hover, div._NameChooser_nm8mk_1 > button._ButtonBase_8cc92_1:hover, 
+ol > li._IndependentLearningTaskItem_1slcq_237:hover {
     background-color: #555;
     color: #eee;
 }
@@ -141,7 +143,9 @@ nav._Breadcrumb_1xxlk_27._FontLg_1kb5t_10 > span > span._BreadcrumbText_1kb5t_18
 div._Content_nt2r3_194, h1._PageTitle_5juaj_285, span._Date_1f6w3_166,
 ._PageContainer_5juaj_92 ._ProgressBarAndLeaderboardsButton_5juaj_316 ._ProgressBarContainer_5juaj_116 div._ProgressBarTextContainer_5juaj_121 span._XpToNext_5juaj_146, 
 div._IndependentLearningPackageTitle_1slcq_145, ol._IndependentLearningTasks_1slcq_71 > li._IndependentLearningTask_1slcq_71 > div._IndependentLearningTaskTitle_1slcq_160, 
-span._CurriculumLevelChip_1f6w3_113, ol > li._IndependentLearningTaskItem_1slcq_237 > div._IndependentLearningTaskItemName_1slcq_279 {
+span._CurriculumLevelChip_1f6w3_113, ol > li._IndependentLearningTaskItem_1slcq_237 > div._IndependentLearningTaskItemName_1slcq_279, 
+nav._Breadcrumb_1slcq_12._FontLg_1kb5t_10 > span > a._BreadcrumbLink_1kb5t_1, span._Title_1slcq_26, 
+span._Code_1slcq_41, span > span._BreadcrumbText_1kb5t_18, ._NoTopicLinksMessage_1slcq_126 {
     color: #ddd;
 }
 
