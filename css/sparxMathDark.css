@@ -1,30 +1,114 @@
 :root {
-    --sparx: #3467f9;
+    --sparx: linear-gradient(45deg, #3a80e7, #5596f6);
 }
 
-* {
+*, button._Trigger_iadio_216, button._SelectTrigger_11j1p_1, input._Search_bay8e_90 {
     box-shadow: none;
+    border: none;
 }
 
-div._Content_1hczm_7, ._Activity_67a0v_1 {
+a._TaskItemLink_jnrtf_22  {
+    border-radius: 0 0 6px 6px;
+    border: 1px solid #555;
+    border-top: none;
+}
+
+a._Selected_jnrtf_85, a._Selected_jnrtf_85._Unattempted_jnrtf_76 {
+    background-color: #444;
+}
+
+a._Unattempted_jnrtf_76, a._TaskItemLink_jnrtf_22._Summary_jnrtf_42, a._Incorrect_jnrtf_60 {
+    background-color: #333;
+}
+
+a._Unattempted_jnrtf_76 > div > span, a._TaskItemLink_jnrtf_22._Summary_jnrtf_42 > div > span {
+    color: #eee;
+}
+
+a._Correct_jnrtf_52._Selected_jnrtf_85 > div > span, a._Correct_jnrtf_52._Selected_jnrtf_85 > div > svg > path  {
+    color: #27ce88;
+}
+
+div._ProgressWheelContainer_1ehfm_37 {
+    display: none;
+}
+
+div._PageBackground_1qeyl_1 > div._PageGradient_1qeyl_9 > img {
+    opacity: 0.2;
+}
+
+div._Content_1hczm_7, ._Activity_67a0v_1, body > div#root,
+div._PageBackground_1qeyl_1, div._PageBackground_1qeyl_1 > div._PageGradient_1qeyl_9 {
     background-color: #222;
 }
 
 div._Sidebar_1hczm_142, ._AccordionHeader_9fvag_77, div._QuestionContainer_ypayp_1 > div, div._AccordionItem_9fvag_7, 
 ._WithStatus_9fvag_42, ._InProgress_9fvag_54, ._AccordionTrigger_9fvag_24, ._PackageAccordionTrigger_s1p,
 ._TaskItemsContainer_jnrtf_1, ._LQDContainer_1v01e_1, div._QuestionContainer_ypayp_1, div._Sm_gk0gx_12 > p, 
-div._AccordionItem_9fvag_7 > *, div._AccordionItem_9fvag_7 > h3._AccordionHeader_9fvag_77 > button  {
+div._AccordionItem_9fvag_7 > *, div._AccordionItem_9fvag_7 > h3._AccordionHeader_9fvag_77 > button, div._DropdownMenuContent_1u1tt_41, 
+div._DropdownMenuContent_1u1tt_41 > a > div._DropdownMenuItem_1u1tt_69, div._VideoContainer_10fkz_1, 
+div._DropdownMenuContent_1u1tt_41 > div > div._DropdownMenuItem_1u1tt_69, div > div._DropdownMenuItem_1u1tt_69, 
+div._DropdownMenuLabel_1u1tt_113, div._NotificationList_1p7b9_58, div._NameChooser_nm8mk_1, button._Trigger_iadio_216, 
+div._DialogContent_nm8mk_25, div._GameButtonGrid_58jvp_3, div._TablesHomeworkMainArea_bo64c_15, 
+div._TokenProgressBanner_jcw0e_1, button._SelectTrigger_11j1p_1, input._Search_bay8e_90, div._ActivityDay_1f6w3_10, 
+button._Tab_ppldj_11, div > div._IndependentLearningPackage_1slcq_68 {
     background-color: #333;
     color: #eee;
     box-shadow: none;
 }
 
-a._Task_1p2y5_1, button._NavButton_1hczm_13, ._Sidebar_1hczm_142 ._NavButton_1hczm_13._Selected_1hczm_180 {
+a._Task_1p2y5_1, div._Task_1p2y5_1, ._Sidebar_1hczm_142 > ._NavButton_1hczm_13._Selected_1hczm_180,
+div._DropdownMenuContent_1u1tt_41 > a:hover > div._DropdownMenuItem_1u1tt_69, div > div._DropdownMenuItem_1u1tt_69:hover,
+div._DropdownMenuContent_1u1tt_41 > div:hover > div._DropdownMenuItem_1u1tt_69, div._AccordionItem_9fvag_7:not(._Locked_9fvag_38) ._AccordionTrigger_9fvag_24:hover,
+div._SummaryProgress_qskb0_34, a._ButtonMd_nt2r3_35, div._InfoPanel_5juaj_1, div._InfoPanel_5juaj_1 > h3._Title_5juaj_15, 
+div._Container_oeif1_1, section._FeedbackCard_1k55b_1, div._Item_1g7eg_21 > div._SupportTipsItem_1l1u6_40,
+section._LinksContainer_1l1u6_78 >  a._Link_1l1u6_32 > section._LinkContainer_1l1u6_100, 
+div._Row_iadio_32 > div._RowInformation_iadio_40, div._Row_iadio_32 > div._RowInformation_iadio_40._NoXP_iadio_49, 
+div._DialogContent_azdjy_60._FullWidth_azdjy_101, button._Trigger_iadio_216:hover, div._Selected_1hczm_180, 
+div._NameRandomiserBar_nm8mk_94, div._DialogButtonContainer_nm8mk_79 > button._ButtonSmall_8cc92_40:first-child, 
+button._SelectTrigger_11j1p_1:hover, button._Tab_ppldj_11:hover[data-state="inactive"], a._Topic_1xxlk_59, 
+div._NameChooser_nm8mk_1 > button._ButtonBase_8cc92_1, div._ActivityDay_1f6w3_10 > div > a._Activity_1f6w3_1:hover, 
+div > span._Chip_1f6w3_81, span._CurriculumLevelChip_1f6w3_113, ol > li._IndependentLearningTaskItem_1slcq_237, 
+div._Pill_1slcq_283 {
     background-color: #444;
+    color: #eee;
+    box-shadow: none;
+}
+
+div#root >  div._LQDContainer_1v01e_1, button._StrandButton_bay8e_247, div._ExtrasList_bay8e_356 > button._TimesTablesButton_bay8e_363 {
+    background: linear-gradient(60deg, #333, #444);
+    box-shadow: none;
+    color: #fff;
+}
+
+button._StrandButton_bay8e_247:hover {
+    background: linear-gradient(60deg, #555, #444);
+    box-shadow: none;
+    color: #fff;
+}
+
+a._Task_1p2y5_1._TaskClickable_1p2y5_22:hover, ._Sidebar_1hczm_142 > button._NavButton_1hczm_13._Selected_1hczm_180, 
+._Sidebar_1hczm_142 > button._NavButton_1hczm_13._Selected_1hczm_180 > span._NavButtonLabel_1hczm_81, 
+div._AccordionItem_9fvag_7[data-orientation="vertical"] > h3._AccordionHeader_9fvag_77[data-orientation="vertical"]:hover, 
+a._ButtonMd_nt2r3_35._ButtonBlue_nt2r3_76:hover, div._DialogButtonContainer_nm8mk_79 > button._ButtonSmall_8cc92_40:first-child:hover,
+a._Topic_1xxlk_59:hover, div._NameChooser_nm8mk_1 > button._ButtonBase_8cc92_1:hover {
+    background-color: #555;
     color: #eee;
 }
 
-div._BottomBar_1wgpl_1 h3._AccordionHeader_9fvag_77:hover {
+._Sidebar_1hczm_142 >  button._NavButton_1hczm_13:hover:not(._Locked_1hczm_128), 
+._Sidebar_1hczm_142 >  button._NavButton_1hczm_13:hover:not(._Locked_1hczm_128) > *,
+div._TextFieldWrapper_15tna_383, input._TextField_15tna_358._TextFieldNumeric_15tna_689, 
+div._Timeline_1f6w3_125::before {
+    background-color: #555;
+    color: #ddd;
+}
+
+div._TabList_ppldj_11 {
+    border-color: #444;
+}
+
+div._QuestionContainer_ypayp_1 > div#BottomBar {
     border-top: #555 1px solid;
 }
 
@@ -33,22 +117,47 @@ div._BottomBar_1wgpl_1 h3._AccordionHeader_9fvag_77:hover {
 }
 
 ._Sidebar_1hczm_142, ._NavButtonLabel_1hczm_81, ._TextElement_15tna_80, span._BookworkAccuracyText_1ug67_18,
-a._Task_1p2y5_1 > div > div > span {
+a._Task_1p2y5_1 > div > div > span, div._Task_1p2y5_1 > div > div > span {
     color: #fff;
 }
 
-._Selected_1hczm_180 > ._NavButtonLabel_1hczm_81 {
+._Selected_1hczm_180 > ._NavButtonLabel_1hczm_81, span._PositionNumber_iadio_75 {
     color: #000;
 }
 
-._NavButton_1hczm_13:hover > ._NavButtonLabel_1hczm_81 {
+._NavButton_1hczm_13:hover > ._NavButtonLabel_1hczm_81, div._Content_8cc92_344:hover > svg {
     color: #444;
 }
 
-._WelcomeBanner_1ehfm_13 > div > ._Hello_1ehfm_21 {
+._WelcomeBanner_1ehfm_13 > div > ._Hello_1ehfm_21, div._TaskCompletionPercentage_1p2y5_63, p._SummaryTitle_qskb0_28, 
+p._SummaryTitle_qskb0_28 > span, p._MotivationMessage_qskb0_69, section._Header_l94wp_12 > h1._Title_l94wp_26, 
+div._Container_1l1u6_1, div._Container_1l1u6_1 > h1, div._Container_1l1u6_1 > section > h4 , 
+div._Container_1l1u6_1 > section > div >  h4, section._LinkContainer_1l1u6_100 > div > h4, 
+div._Item_1g7eg_21 > div._SupportTipsItem_1l1u6_40 > span, h1._Title_iadio_158, div._Title_ppldj_3, 
+div._TopicFilterLabel_bay8e_70, span._TopicFilterLabel_bay8e_70, div._Tabs_1q254_1 > button, div._Content_8cc92_344 > svg, 
+div._Container_hgytc_1 > h1, div._ActivityLeft_1f6w3_46, div._ActivityRight_1f6w3_69, 
+a._Topic_1xxlk_59 > div > div._TopicTitle_1xxlk_98, nav._Breadcrumb_1xxlk_27._FontLg_1kb5t_10 > span > a,
+nav._Breadcrumb_1xxlk_27._FontLg_1kb5t_10 > span > span._BreadcrumbText_1kb5t_18,
+div._Content_nt2r3_194, h1._PageTitle_5juaj_285, span._Date_1f6w3_166,
+._PageContainer_5juaj_92 ._ProgressBarAndLeaderboardsButton_5juaj_316 ._ProgressBarContainer_5juaj_116 div._ProgressBarTextContainer_5juaj_121 span._XpToNext_5juaj_146, 
+div._IndependentLearningPackageTitle_1slcq_145, ol._IndependentLearningTasks_1slcq_71 > li._IndependentLearningTask_1slcq_71 > div._IndependentLearningTaskTitle_1slcq_160, 
+span._CurriculumLevelChip_1f6w3_113, ol > li._IndependentLearningTaskItem_1slcq_237 > div._IndependentLearningTaskItemName_1slcq_279 {
     color: #ddd;
 }
 
-._WelcomeBanner_1ehfm_13 > div > ._PackageTypeDescription_1ehfm_32 {
+._WelcomeBanner_1ehfm_13 > div > ._PackageTypeDescription_1ehfm_32, div._Container_hgytc_1 {
     color: #bbb;
+}
+
+div._Tabs_1q254_1 > button._Active_1q254_18 {
+    border-bottom: 5px solid #eee;
+}
+
+div._DialogButtonContainer_nm8mk_79 > button._ButtonSmall_8cc92_40:first-child {
+    border-color: #fff;
+}
+
+div._CalculatorInfoContainer_5oh8x_10 > button._Boxy_bu06u_75._Filled_bu06u_8, 
+div._QuestionInfo_5oh8x_1 > div > div._Boxy_bu06u_75._Filled_bu06u_8, button._Tab_ppldj_11[data-state="active"] {
+    background: var(--sparx);
 }
