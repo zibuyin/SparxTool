@@ -81,6 +81,7 @@ async function settings() {
                             }
                         }
                         independent();
+                        fetchCss()
                     });
                 }
                 return(0);
