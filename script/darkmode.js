@@ -1,6 +1,6 @@
 async function fetchCss() {
-    var darkmodeEnabled = (await readLargeNumber(key) % 2) == 1;
-    if (darkmodeEnabled) {
+    var darkmodeEnabled = (readLargeNumber(key) % 2) == 1;
+    if (darkmodeEnabled && !document.getElementById("darkmodeCss")) {
         document.getElementsByTagName("head")[0].innerHTML += `
         <style id="darkmodeCss">
         ${await fetch('https://raw.githubusercontent.com/zibuyin/SparxTool/refs/heads/main/css/sparxMathDark.css')
@@ -9,9 +9,8 @@ async function fetchCss() {
             )
         }
         </style>`;
-        return(0)
     }
-    if (document.getElementById("darkmodeCss")) {
+    else if (!darkmodeEnabled && document.getElementById("darkmodeCss")) {
         document.getElementById("darkmodeCss").remove()
     }
 }

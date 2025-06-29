@@ -16,6 +16,10 @@
     }
 }
 
+* {
+    transition: ease-out 0.05s;
+}
+
 body > div._DialogOverlay_mpmiz_53, body > div.spx-status-embed {
     width: 100vw;
     background-color: #ccd2;

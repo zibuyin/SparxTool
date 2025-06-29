@@ -23,22 +23,6 @@ async function settings() {
                     <button class="sliderContainer themeSpace"><div class="slider" style="margin-Left: ${darkMode ? "16px" : "2px"};"></div></button>
                     <br><br>
                                     
-                    <h2 style="display: none;">Theme</h2>
-                    <div id="theme" style="display: none;">
-                        <span>
-                            <input id="ocean" class="radio" type="radio" name="theme"></input> &nbsp; 
-                            <label for="ocean">ocean</label>
-                        </span>
-                        <span>
-                            <input id="stone" class="radio" type="radio" name="theme" checked></input> &nbsp; 
-                            <label for="stone">stone</label>
-                        </span>
-                        <span>
-                            <input id="candy" class="radio" type="radio" name="theme"></input> &nbsp; 
-                            <label for="candy">candy</label><br>
-                        </span>
-                    </div>
-                    <br style="display: none;">
 
                     <h2>Fake Independent Learning</h2>
                     <button class="sliderContainer themeSpace"><div class="slider" style="margin-left: ${fakeIndependentLearning ? "16px" : "2px"};"></div></button>`
@@ -46,8 +30,6 @@ async function settings() {
                 for (var i = 0; i < document.getElementsByClassName("sliderContainer").length; ++i) {
 
                     sliderContainer = document.getElementsByClassName("sliderContainer")[i];
-
-                    sliderContainer.id = `${i}`
 
                     slider = sliderContainer.getElementsByClassName("slider")[0];
                     slider.id = `${i}`
