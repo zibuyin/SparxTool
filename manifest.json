@@ -13,7 +13,7 @@
     {
       "matches": ["https://maths.sparx-learning.com/*"],
       "js": ["script/data.js", "script/independentL.js", "script/darkmode.js", "script/settings.js", "script/whiteboard.js"],
-      "css": ["css/sparxMath.css"]
+      "css": ["css/sparxMath.css", "css/sparxMathDark.css"]
     }
   ],
   "action": {
