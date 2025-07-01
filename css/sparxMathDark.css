@@ -7,6 +7,17 @@
     border: none;
 }
 
+a._ButtonDefault_a134n_27, button._ButtonDefault_a134n_27 {
+    --primary-col: #fff;
+    --primary-col-disabled: #eee;
+    --primary-bg-disabled: #555;
+    --secondary-bg: #444;
+    --secondary-bg-hover: #555;
+    --secondary-col-disabled: #555;
+    --secondary-bg-disabled: #555;
+    --secondary-border-col-disabled: #555;
+}
+
 a._TaskItemLink_jnrtf_22  {
     border-radius: 0 0 6px 6px;
     border: 1px solid #555;
