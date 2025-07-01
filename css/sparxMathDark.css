@@ -72,14 +72,14 @@ div._IndependentLearningProgressDialogContent_1slcq_58, div._IndependentLearning
 a._Task_1p2y5_1, div._Task_1p2y5_1, ._Sidebar_1hczm_142 > ._NavButton_1hczm_13._Selected_1hczm_180,
 div._DropdownMenuContent_1u1tt_41 > a:hover > div._DropdownMenuItem_1u1tt_69, div > div._DropdownMenuItem_1u1tt_69:hover,
 div._DropdownMenuContent_1u1tt_41 > div:hover > div._DropdownMenuItem_1u1tt_69, div._AccordionItem_9fvag_7:not(._Locked_9fvag_38) ._AccordionTrigger_9fvag_24:hover,
-div._SummaryProgress_qskb0_34, a._ButtonMd_nt2r3_35, div._InfoPanel_5juaj_1, div._InfoPanel_5juaj_1 > h3._Title_5juaj_15, 
+div._SummaryProgress_qskb0_34, div._InfoPanel_5juaj_1, div._InfoPanel_5juaj_1 > h3._Title_5juaj_15, 
 div._Container_oeif1_1, section._FeedbackCard_1k55b_1, div._Item_1g7eg_21 > div._SupportTipsItem_1l1u6_40,
 section._LinksContainer_1l1u6_78 >  a._Link_1l1u6_32 > section._LinkContainer_1l1u6_100, 
 div._Row_iadio_32 > div._RowInformation_iadio_40, div._Row_iadio_32 > div._RowInformation_iadio_40._NoXP_iadio_49, 
 div._DialogContent_azdjy_60._FullWidth_azdjy_101, button._Trigger_iadio_216:hover, div._Selected_1hczm_180, 
-div._NameRandomiserBar_nm8mk_94, div._DialogButtonContainer_nm8mk_79 > button._ButtonSmall_8cc92_40:first-child, 
+div._NameRandomiserBar_nm8mk_94, 
 button._SelectTrigger_11j1p_1:hover, button._Tab_ppldj_11:hover[data-state="inactive"], a._Topic_1xxlk_59, 
-div._NameChooser_nm8mk_1 > button._ButtonBase_8cc92_1, div._ActivityDay_1f6w3_10 > div > a._Activity_1f6w3_1:hover, 
+div._ActivityDay_1f6w3_10 > div > a._Activity_1f6w3_1:hover, 
 div > span._Chip_1f6w3_81, span._CurriculumLevelChip_1f6w3_113, ol > li._IndependentLearningTaskItem_1slcq_237, 
 ol > li._IndependentLearningTaskItem_1slcq_237 > div._Pill_1slcq_283, div._InlineSlotOptions_15tna_1134 {
     background-color: #444;
@@ -102,8 +102,8 @@ button._StrandButton_bay8e_247:hover {
 a._Task_1p2y5_1._TaskClickable_1p2y5_22:hover, ._Sidebar_1hczm_142 > button._NavButton_1hczm_13._Selected_1hczm_180, 
 ._Sidebar_1hczm_142 > button._NavButton_1hczm_13._Selected_1hczm_180 > span._NavButtonLabel_1hczm_81, 
 div._AccordionItem_9fvag_7[data-orientation="vertical"] > h3._AccordionHeader_9fvag_77[data-orientation="vertical"]:hover, 
-a._ButtonMd_nt2r3_35._ButtonBlue_nt2r3_76:hover, div._DialogButtonContainer_nm8mk_79 > button._ButtonSmall_8cc92_40:first-child:hover,
-a._Topic_1xxlk_59:hover, div._NameChooser_nm8mk_1 > button._ButtonBase_8cc92_1:hover, 
+div._DialogButtonContainer_nm8mk_79 > button._ButtonSmall_8cc92_40:first-child:hover,
+a._Topic_1xxlk_59:hover, 
 ol > li._IndependentLearningTaskItem_1slcq_237:hover {
     background-color: #555;
     color: #eee;
