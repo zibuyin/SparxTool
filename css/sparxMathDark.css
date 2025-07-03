@@ -9,10 +9,12 @@
     border: none;
 }
 
-a._ButtonDefault_a134n_27, button._ButtonDefault_a134n_27 {
+a._ButtonDefault_a134n_27, button._ButtonDefault_a134n_27, button._ButtonPrimary_8cc92_177:not(:disabled):hover {
     --primary-col: #fff;
     --primary-col-disabled: #eee;
     --primary-bg-disabled: #555;
+    --primary-bg-hover: #0000;
+    border: 1px solid var(--sparx);
     --secondary-bg: #444;
     --secondary-bg-hover: #555;
     --secondary-col-disabled: #555;
@@ -22,19 +24,16 @@ a._ButtonDefault_a134n_27, button._ButtonDefault_a134n_27 {
 }
 
 a._ButtonBlue_nt2r3_76, button._ButtonBlue_nt2r3_76 {
-    --spx-button-contained-color: var(--colours-text-body-inverted);
-    --spx-button-contained-color-hover: var(--colours-text-body-inverted);
-    --spx-button-contained-background: var(--colours-interactable);
-    --spx-button-contained-background-hover: var(--colours-selected);
-    --spx-button-outlined-border-color: var(--colours-interactable);
+    --spx-button-contained-color: #fff;
+    --spx-button-contained-color-hover: #fff;
+    --spx-button-contained-background-hover: #0000; border: 1px solid var(--sparx);
     --spx-button-outlined-color: #fff;
     --spx-button-outlined-background: #444;
     --spx-button-outlined-background-hover: #555;
-    --spx-button-plain-color: var(--colours-interactable);
-    --spx-button-plain-background: var(--colours-plain-background);
-    --spx-button-plain-background-hover: var(--colours-regular-background);
-    --spx-button-text-color: var(--colours-interactable);
-    --spx-button-text-color-hover: var(--colours-selected);
+}
+
+._Sidebar_1hczm_142 > button._NavButton_1hczm_13._Selected_1hczm_180 {
+    border-left: none;
 }
 
 a._TaskItemLink_jnrtf_22  {
@@ -97,11 +96,11 @@ div._Container_oeif1_1, section._FeedbackCard_1k55b_1, div._Item_1g7eg_21 > div.
 section._LinksContainer_1l1u6_78 >  a._Link_1l1u6_32 > section._LinkContainer_1l1u6_100, 
 div._Row_iadio_32 > div._RowInformation_iadio_40, div._Row_iadio_32 > div._RowInformation_iadio_40._NoXP_iadio_49, 
 div._DialogContent_azdjy_60._FullWidth_azdjy_101, div._Selected_1hczm_180, 
-div._NameRandomiserBar_nm8mk_94, 
+div._NameRandomiserBar_nm8mk_94, button._Button_1biua_43, 
 button._SelectTrigger_11j1p_1:hover, button._Tab_ppldj_11:hover[data-state="inactive"], a._Topic_1xxlk_59, 
 div._ActivityDay_1f6w3_10 > div > a._Activity_1f6w3_1:hover, 
 div > span._Chip_1f6w3_81, span._CurriculumLevelChip_1f6w3_113, ol > li._IndependentLearningTaskItem_1slcq_237, 
-div._InlineSlotOptions_15tna_1134 {
+div._InlineSlotOptions_15tna_1134, button._Trigger_6l4p1_19:hover {
     background-color: #444;
     color: #eee;
     box-shadow: none;
@@ -140,7 +139,7 @@ div._TabList_ppldj_11 {
     border-color: #444;
 }
 
-div._QuestionContainer_ypayp_1 > div#BottomBar {
+div._BottomBar_1wgpl_1 {
     border-top: #555 1px solid;
 }
 
@@ -192,6 +191,10 @@ div._DialogButtonContainer_nm8mk_79 > button._ButtonSmall_8cc92_40:first-child {
 }
 
 div._CalculatorInfoContainer_5oh8x_10 > button._Boxy_bu06u_75._Filled_bu06u_8, 
-div._QuestionInfo_5oh8x_1 > div > div._Boxy_bu06u_75._Filled_bu06u_8, button._Tab_ppldj_11[data-state="active"] {
+div._QuestionInfo_5oh8x_1 > div > div._Boxy_bu06u_75._Filled_bu06u_8 {
     background: var(--sparx);
+}
+
+button._Tab_ppldj_11[data-state="active"] {
+    background: linear-gradient(45deg, #2a70d7, #5596f6);
 }
