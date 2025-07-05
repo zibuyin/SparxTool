@@ -8,7 +8,7 @@ function openWhiteboard() {
     whiteboardElementBlur.style.height = "100vh";
     whiteboardElementBlur.style.display = "flex";
     whiteboardElementBlur.innerHTML = `
-    <h1>hello</h1>`
+    <div class="whiteboard">hello</div>`;  
 }
 
 async function closeWhiteboard() {

@@ -82,7 +82,7 @@ div._DialogContent_nm8mk_25, div._GameButtonGrid_58jvp_3, div._TablesHomeworkMai
 div._TokenProgressBanner_jcw0e_1, button._SelectTrigger_11j1p_1, input._Search_bay8e_90, div._ActivityDay_1f6w3_10, 
 button._Tab_ppldj_11, div > div._IndependentLearningPackage_1slcq_68, div._TopicLinksSectionContainer_1slcq_115, 
 div._IndependentLearningProgressDialogContent_1slcq_58, div._IndependentLearningNoContentMessage_1slcq_84, 
-div._DialogContent_azdjy_60, div._SummaryContainer_qskb0_1 {
+div._DialogContent_azdjy_60, div._SummaryContainer_qskb0_1, div._DialogContent_mpmiz_60, div._VideoContainer_ypayp_90 {
     background-color: #333;
     color: #eee;
     box-shadow: none;
@@ -96,7 +96,7 @@ div._Container_oeif1_1, section._FeedbackCard_1k55b_1, div._Item_1g7eg_21 > div.
 section._LinksContainer_1l1u6_78 >  a._Link_1l1u6_32 > section._LinkContainer_1l1u6_100, 
 div._Row_iadio_32 > div._RowInformation_iadio_40, div._Row_iadio_32 > div._RowInformation_iadio_40._NoXP_iadio_49, 
 div._DialogContent_azdjy_60._FullWidth_azdjy_101, div._Selected_1hczm_180, 
-div._NameRandomiserBar_nm8mk_94, button._Button_1biua_43, 
+div._NameRandomiserBar_nm8mk_94, button._Button_1biua_43, div._ResultFullWidth_1ylu5_1._Incorrect_1ylu5_25, 
 button._SelectTrigger_11j1p_1:hover, button._Tab_ppldj_11:hover[data-state="inactive"], a._Topic_1xxlk_59, 
 div._ActivityDay_1f6w3_10 > div > a._Activity_1f6w3_1:hover, 
 div > span._Chip_1f6w3_81, span._CurriculumLevelChip_1f6w3_113, ol > li._IndependentLearningTaskItem_1slcq_237, 
@@ -169,7 +169,7 @@ div._TopicFilterLabel_bay8e_70, span._TopicFilterLabel_bay8e_70, div._Tabs_1q254
 div._Container_hgytc_1 > h1, div._ActivityLeft_1f6w3_46, div._ActivityRight_1f6w3_69, 
 a._Topic_1xxlk_59 > div > div._TopicTitle_1xxlk_98, nav._Breadcrumb_1xxlk_27._FontLg_1kb5t_10 > span > a,
 nav._Breadcrumb_1xxlk_27._FontLg_1kb5t_10 > span > span._BreadcrumbText_1kb5t_18,
-h1._PageTitle_5juaj_285, span._Date_1f6w3_166, p._Message_1ykjo_17, 
+h1._PageTitle_5juaj_285, span._Date_1f6w3_166, p._Message_1ykjo_17, div._Messages_1ylu5_94._Incorrect_1ylu5_25, 
 ._PageContainer_5juaj_92 ._ProgressBarAndLeaderboardsButton_5juaj_316 ._ProgressBarContainer_5juaj_116 div._ProgressBarTextContainer_5juaj_121 span._XpToNext_5juaj_146, 
 div._IndependentLearningPackageTitle_1slcq_145, ol._IndependentLearningTasks_1slcq_71 > li._IndependentLearningTask_1slcq_71 > div._IndependentLearningTaskTitle_1slcq_160, 
 span._CurriculumLevelChip_1f6w3_113, ol > li._IndependentLearningTaskItem_1slcq_237 > div._IndependentLearningTaskItemName_1slcq_279, 
