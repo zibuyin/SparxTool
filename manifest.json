@@ -12,12 +12,11 @@
   "content_scripts": [
     {
       "matches": ["https://maths.sparx-learning.com/*"],
-      "js": ["script/data.js", "script/independentL.js", "script/darkmode.js", "script/settings.js", "script/whiteboard.js"],
-      "css": ["css/sparxMath.css", "css/sparxMathDark.css"]
+      "js": ["script/data.js", "script/independentL.js", "script/darkmode.js", "script/nightLight.js", "script/settings.js", "script/whiteboard.js"],
+      "css": ["css/sparxMath.css"]
     }
   ],
   "action": {
-    "default_popup": "popup/popup.html",
     "default_icon": "images/icons/icon16.png"
   },
   "icons": {
