@@ -2,7 +2,6 @@ let header = document.getElementsByClassName("_BannerSpacing_u9l2x_29");
 
 async function independent() {
     var number = (readLargeNumber(key) % 4) > 1;
-    console.log(number)
     while (number) {
         if ((number && document.getElementsByClassName("_ILBanner_u9l2x_53").length == 0) && header.length > 0) {
             header[0].innerHTML = '<span class="_ILBanner_u9l2x_53">Independent Learning</span>';
